@@ -9,5 +9,74 @@
     padding: 20px;
     font-size: 30px;
     text-align: center;
-    margin: 10px
+    margin: 10px;
+    border-radius: 15px;
+    
   }
+
+  .grid-item:hover {
+    cursor: pointer;
+    box-shadow: inset 0 -5em 5em rgba(0,0,0,0.1),
+    0 0  0 5px rgb(143, 148, 213),
+    0.3em 0.3em 1em rgba(19, 18, 18, 0.3);
+  }
+
+  .product-info > button {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
+
+  .product-info > button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+  }
+
+  .product-info > button:active {
+    color: #000
+  }
+
+  .product-info > button:active::after{
+    background: transparent;
+  }
+
+  .product-info > button:hover:before {
+    opacity: 1;
+}
+
+.product-info > button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
