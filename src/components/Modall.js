@@ -3,8 +3,9 @@ import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import '../styles/Modall.css'
+import { display } from '@mui/system';
 
 const style = {
   position: 'absolute',
@@ -13,7 +14,8 @@ const style = {
   transform: 'translate(-50%, -50%)',
   width: 400,
   bgcolor: 'background.paper',
-  border: '2px solid #000',
+  border: 'none',
+  borderradius: '20%',
   boxShadow: 24,
   p: 4,
 };
@@ -24,9 +26,10 @@ export default function TransitionsModal() {
   const handleClose = () => setOpen(false);
 
   return (
-    <div>
-      <Button onClick={handleOpen}>Open modal</Button>
+    <div className='form-window'>
+      <span onClick={handleOpen}>Bejelentkezés</span>
       <Modal
+      className="box-option"
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
         open={open}
@@ -38,12 +41,18 @@ export default function TransitionsModal() {
         }}
       >
         <Fade in={open}>
-          <Box sx={style}>
+          <Box className=".box-option2" sx={style}>
             <Typography id="transition-modal-title" variant="h6" component="h2">
-              Text in a modal
+              <label >felhasználónév</label>
+              <input type="text" placeholder='Írd ide a felhasználónevedet...'/>
+            </Typography>
+            <Typography id="transition-modal-title" variant="h6" component="h2">
+              <label >Jelszó</label>
+              <input type="text" placeholder='Írd ide a jelszavadat...'/>
             </Typography>
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+              Ha még nem rendelkezel felhasználóval, akkor regisztrálj!
+              <span>Regisztráció</span>
             </Typography>
           </Box>
         </Fade>

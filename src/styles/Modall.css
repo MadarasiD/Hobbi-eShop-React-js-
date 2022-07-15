@@ -1,0 +1,15 @@
+.form-window {
+    display: block;
+}
+
+.form-window > .box-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box-option2 {
+    display: block;
+    text-align: center;
+}
