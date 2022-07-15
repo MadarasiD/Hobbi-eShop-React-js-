@@ -3,6 +3,9 @@ import "../styles/Header.css"
 import { TiShoppingCart } from "react-icons/ti";
 import { SiHomeassistantcommunitystore } from "react-icons/si";
 import Dropdown from '../components/Dropdown'
+import Modall from '../components/Modall'
+
+
 
 
 
@@ -19,12 +22,15 @@ const Header = () => {
       </div>
 
       <div className="header-nav">
+
+
         <div className="nav-item">
             <span className="nav-itemlineone">
                 Üdvözöllek Vendég
             </span>
+            
             <span className="nav-itemlinetwo">
-                <span>Bejelentkezés</span>
+                <span><Modall /></span>
             </span>
         </div>
 
