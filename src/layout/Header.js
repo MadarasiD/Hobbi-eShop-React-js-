@@ -5,6 +5,7 @@ import { SiHomeassistantcommunitystore } from "react-icons/si";
 import Dropdown from '../components/Dropdown'
 
 
+
 const Header = () => {
   return (
     <div className='header'>
@@ -20,10 +21,10 @@ const Header = () => {
       <div className="header-nav">
         <div className="nav-item">
             <span className="nav-itemlineone">
-                Hello Guest
+                Üdvözöllek Vendég
             </span>
             <span className="nav-itemlinetwo">
-                Sign in
+                <span>Bejelentkezés</span>
             </span>
         </div>
 

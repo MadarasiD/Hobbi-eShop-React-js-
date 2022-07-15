@@ -12,7 +12,7 @@
     margin: 10px;
     border-radius: 15px;
     max-width: 250px;
-    max-height: 250px;
+    max-height: 350px;
   }
 
   .grid-item:hover {
@@ -93,4 +93,10 @@
 
 .grid-container > .grid-item > .product-info > .itemname {
   font-size: 10px;
+}
+
+.grid-container > .grid-item > .product-info > .product-price {
+  padding-top: -30px;
+  margin-top: 0;
+  font-size: 20px;
 }

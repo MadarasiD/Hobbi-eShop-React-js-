@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "../styles/Products.css"
+import Lenovo from "../itemcomponents/Lenovo"
 
 
 const Products = () => {
@@ -15,7 +16,7 @@ const Products = () => {
         <p className="product-price">30.000 FT</p>
         <div className="product-rating"> </div>
 
-        <button>Vásárlás</button>
+        <button > <a href="../itemcomponents/Lenovo.js"> <Lenovo />Vásárlás</a> </button>
     </div>
   </div>
 
