@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import "../styles/Products.css"
-import Rate from '../components/Rate'
-import data from "../data/Data"
+
 
 const Products = () => {
   const [rating, setRating] = useState(0);
@@ -11,11 +10,12 @@ const Products = () => {
          
   <div class="grid-item">
     <div className="product-info">
-        <p>title</p>
+      <img src="../assets/lenovo.jpg" alt="" />
+        <p className='itemname'>Lenovo Legion T5 26AMR5 asztali számítógép, AMD Ryzen™ 5 5600G processzorral max. 4.40GHz, 16GB DDR4, 512GB SSD M.2 PCIe, GeForce RTX 3060 12GB GDDR6</p>
         <p className="product-price">30.000 FT</p>
-        <div className="product-rating"> <Rate rating={rating} onRating={(rate) => setRating(rate)} count={5} /></div>
+        <div className="product-rating"> </div>
 
-        <button>Hozzáadás a kosárhoz</button>
+        <button>Vásárlás</button>
     </div>
   </div>
 
@@ -24,7 +24,7 @@ const Products = () => {
   <p>title</p>
         <p className="product-price">29.000 FT</p>
         
-        <button>Hozzáadás a kosárhoz</button>
+        <button>Vásárlás</button>
         </div>   
     </div>
   
@@ -32,7 +32,7 @@ const Products = () => {
   <div className="product-info">
         <p>title</p>
         <p className="product-price">28.000 FT</p>
-        <button>Hozzáadás a kosárhoz</button>
+        <button>Vásárlás</button>
     </div>
   </div>
 
@@ -40,7 +40,7 @@ const Products = () => {
   <div className="product-info">
         <p>title</p>
         <p className="product-price">27.000 FT</p>
-        <button>Hozzáadás a kosárhoz</button>
+        <button>Vásárlás</button>
     </div>
   </div>
 
@@ -48,7 +48,7 @@ const Products = () => {
   <div className="product-info">
         <p>title</p>
         <p className="product-price">26.000 FT</p>
-        <button>Hozzáadás a kosárhoz</button>
+        <button>Vásárlás</button>
     </div>
   </div>
 
@@ -56,7 +56,7 @@ const Products = () => {
   <div className="product-info">
         <p>title</p>
         <p className="product-price">25.000 FT</p>
-        <button>Hozzáadás a kosárhoz</button>
+        <button>Vásárlás</button>
     </div>
   </div>
 
@@ -64,7 +64,7 @@ const Products = () => {
     <div className="product-info">
         <p>title</p>
         <p className="product-price">24.000 FT</p>
-        <button>Hozzáadás a kosárhoz</button>
+        <button>Vásárlás</button>
     </div>
     </div>
 
@@ -72,7 +72,7 @@ const Products = () => {
   <div className="product-info">
         <p>title</p>
         <p className="product-price">23.000 FT</p>
-        <button>Hozzáadás a kosárhoz</button>
+        <button>Vásárlás</button>
     </div>
   </div>
 
@@ -80,7 +80,7 @@ const Products = () => {
   <div className="product-info">
         <p>title</p>
         <p className="product-price">22.000 FT</p>
-        <button>Hozzáadás a kosárhoz</button>
+        <button>Vásárlás</button>
     </div>
   </div>
 
@@ -88,7 +88,7 @@ const Products = () => {
   <div className="product-info">
         <p>title</p>
         <p className="product-price">21.000 FT</p>
-        <button>Hozzáadás a kosárhoz</button>
+        <button>Vásárlás</button>
     </div>
   </div>
 
@@ -96,7 +96,7 @@ const Products = () => {
   <div className="product-info">
         <p>title</p>
         <p className="product-price">20.000 FT</p>
-        <button>Hozzáadás a kosárhoz</button>
+        <button>Vásárlás</button>
     </div>
   </div>
 
@@ -104,7 +104,7 @@ const Products = () => {
   <div className="product-info">
         <p>title</p>
         <p className="product-price">19.000 FT</p>
-        <button>Hozzáadás a kosárhoz</button>
+        <button>Vásárlás</button>
     </div>
   </div>
   
