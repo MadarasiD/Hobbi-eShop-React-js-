@@ -3,8 +3,8 @@
     display: flex;
     align-items: center;
     background: radial-gradient(circle at 18.7% 37.8%, rgb(121, 114, 114) 0%, rgb(107, 143, 158) 90%);
-    position: sticky;
-    top: 0;
+    position: static;
+    top: 20px;
     z-index: 100;
 }
 

@@ -4,6 +4,8 @@ import { TiShoppingCart } from "react-icons/ti";
 import { SiHomeassistantcommunitystore } from "react-icons/si";
 import Dropdown from '../components/Dropdown'
 import Modall from '../components/Modall'
+import Registration from '../components/Registartion'
+
 
 
 
@@ -30,7 +32,15 @@ const Header = () => {
             </span>
             
             <span className="nav-itemlinetwo">
-                <span><Modall /></span>
+                <span><Modall /> </span>
+            </span>
+        </div>
+        <div className="nav-item">
+        <span className="nav-itemlineone">
+                Nem rendelkezel felhasználóval?
+            </span>
+            <span className="nav-itemlinetwo">
+                <span> <Registration /></span>
             </span>
         </div>
 

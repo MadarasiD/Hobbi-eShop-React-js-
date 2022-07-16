@@ -6,6 +6,7 @@ import Fade from '@mui/material/Fade';
 import Typography from '@mui/material/Typography';
 import '../styles/Modall.css'
 
+
 const style = {
   position: 'absolute',
   top: '50%',
@@ -31,7 +32,7 @@ export default function TransitionsModal() {
 
   return (
     <div className='form-window'>
-      <button className='login-btn' onClick={handleOpen}>Bejelentkezés</button>
+      <button className='login-btn' onClick={handleOpen}>Regisztráció</button>
       <Modal
       className="box-option"
         aria-labelledby="transition-modal-title"
@@ -46,17 +47,20 @@ export default function TransitionsModal() {
       >
         <Fade in={open}>
           <Box className=".box-option2" sx={style}>
+          <Typography id="transition-modal-title" variant="h6" component="h2">
+              <input type="email" placeholder='e-mail cím'/>
+            </Typography>
             <Typography id="transition-modal-title" variant="h6" component="h2">
               <input type="text" placeholder='Felhasználónév'/>
             </Typography>
             <Typography id="transition-modal-title" variant="h6" component="h2">
               <input  type="password" placeholder='Jelszó'/>
             </Typography>
-            <button>Bejelentkezés</button>
-            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              <p>Ha még nem rendelkezel felhasználóval, akkor regisztrálj!</p> 
-              <span></span>
+            <Typography id="transition-modal-title" variant="h6" component="h2">
+              <input  type="password" placeholder='Jelszó mégegyszer'/>
             </Typography>
+            <button>Regisztráció</button>
+            
           </Box>
         </Fade>
       </Modal>
