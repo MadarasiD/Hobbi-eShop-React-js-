@@ -1,6 +1,60 @@
+.dropdown2 {
+    position: relative;
+}
+
+.dropdown2 li {
+    list-style: none;
+    
+}
+
+.dropdown2 li a{
+    text-decoration: none;
+}
+
+.dropdown2 > ul > .ctg-btn > a{
+    border-bottom: none;
+    color: #000;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #fff;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    margin-top: -20px;
+    width: 100px;
+    align-items: center;
+    text-align: center;
+    padding-left: 5px;
+}
+
+.dropdown2 > ul > .ctg-btn > .hambika {
+    margin-right: 5px;
+}
+
+
+.dropdown2 .sub-menu-1 {
+    margin-top: 5%;
+    margin-left: -20%;
+    
+}
+
 div .sub-menu-1 ul li {
     list-style: none;
+    background: #fff;
+    padding-top: 10px;
+    padding-left: 10px;
+    
 }
 div .sub-menu-1 ul li a {
     text-decoration: none;
+    color: #000;
+}
+
+div .sub-menu-1 {
+    display: none;
+}
+
+.dropdown2 ul li:hover .sub-menu-1{
+    margin-top: 180%;
+    display: block;
 }

@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import '../styles/Categoria.css'
+import { GiHamburgerMenu } from "react-icons/gi"
 
 const Categoria = () => {
   return (
     <div className='dropdown2'>
           <ul>
-            <li><a href="/">Kategória</a>
+            <li className='active ctg-btn'><a href="/" style={{display: 'flex',alignItems: 'center', textAlign: 'center'}}><GiHamburgerMenu className='hambika' style={{marginRight: 5}} />Kategória</a>
             <div className='sub-menu-1'>
                 <ul>
                   <li><a href="/">Tv és szórakozás</a></li>
