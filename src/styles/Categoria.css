@@ -38,16 +38,23 @@
     
 }
 
+.dropdown2 .sub-menu-1 ul{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
 div .sub-menu-1 ul li {
     list-style: none;
     background: #fff;
     padding-top: 10px;
     padding-left: 10px;
+    padding-bottom: 10px;
     
 }
 div .sub-menu-1 ul li a {
     text-decoration: none;
     color: #000;
+    
 }
 
 div .sub-menu-1 {
@@ -55,6 +62,17 @@ div .sub-menu-1 {
 }
 
 .dropdown2 ul li:hover .sub-menu-1{
-    margin-top: 180%;
+    margin-top: 235%;
     display: block;
 }
+
+.dropdown2 > ul > li > .sub-menu-1 > ul > li:hover {
+    border: 1px solid rgb(172, 166, 166);
+    border-left: none;
+    border-right: none;
+}
+
+div .sub-menu-2 {
+    display: none;
+}
+
